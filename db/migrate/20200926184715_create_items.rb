@@ -3,9 +3,10 @@ class CreateItems < ActiveRecord::Migration[6.0]
     create_table :items do |t|
       t.string :name
       t.string :description
-      t.string :brand
       t.decimal :price
-      t.integer :quantity
+      t.string :image
+      t.string :brand
+      t.string :jewelry_type
 
       t.timestamps
     end
